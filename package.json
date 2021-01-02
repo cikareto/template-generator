@@ -1,50 +1,32 @@
 {
-  "name": "template-generator",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.0.0",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "@types/classnames": "^2.2.11",
-    "@types/jest": "^26.0.19",
-    "@types/node": "^12.19.11",
-    "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.10",
-    "autoprefixer": "^9.8.6",
-    "classnames": "^2.2.6",
-    "postcss": "^7.0.35",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "typescript": "^4.1.3",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "generator-cikareto",
+  "version": "1.0.0",
+  "description": "A template generator for lazy person",
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "generators"
+  ],
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cikareto/template-generator.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "@cikareto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cikareto/template-generator/issues"
+  },
+  "homepage": "https://github.com/cikareto/template-generator#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "mkdirp": "^1.0.4",
+    "path": "^0.12.7",
+    "yeoman-generator": "^4.12.0",
+    "yosay": "^2.0.2"
   }
 }
