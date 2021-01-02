@@ -37,9 +37,14 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath(this.props.framework),
-      this.destinationPath(".")
+      this.destinationPath("."),
+      {
+        name: this.props.name,
+        version: this.props.version,
+        description: this.props.description,
+      }
     );
 
     // copy hiding files
